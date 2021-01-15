@@ -1,0 +1,35 @@
+/* socials-net */
+
+.socials-net {
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    transition: $transition-time $time-distribution-function;
+  }
+
+  &__link--gray {
+    fill: $cliennts-light-gray-color;
+  }
+
+  &__link--white {
+    fill: $white-color;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    fill: $white-color;
+    background-color: $accent-blue-color;
+  }
+}

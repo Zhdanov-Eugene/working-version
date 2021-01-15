@@ -1,0 +1,22 @@
+/* footer */
+
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $background-footer-color;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px $hero-box-shadow-color;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__info {
+    margin: 0px;
+    width: 230px;
+    /* outline: 1px solid red; */
+  }
+}
