@@ -1,7 +1,11 @@
 /* site-nav */
 
 .site-nav {
-  // display: flex;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  display: flex;
 
   &__item {
     margin-right: 50px;
@@ -15,7 +19,7 @@
  сделано подчёркивание текущей ссылки */
 
   &__link {
-    // position: relative;
+    position: relative;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -31,8 +35,8 @@
 
   &__link::after {
     content: '';
-    // position: absolute;
-    // display: block;
+    position: absolute;
+    display: block;
     opacity: 0;
 
     bottom: 0;

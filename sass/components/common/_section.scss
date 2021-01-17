@@ -1,17 +1,39 @@
 /* ..........Section.......... */
 
 .section {
-  padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 
   &__title {
+    @media screen and (min-width: 480px) {
+      font-size: 28px;
+      line-height: 1.17;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 28px;
+      line-height: 1.17;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.16;
+      margin-bottom: 50px;
+    }
+
     color: $text-title-color;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+
     text-align: center;
     letter-spacing: 0.03em;
 
     margin-top: 0px;
-    margin-bottom: 50px;
   }
 }

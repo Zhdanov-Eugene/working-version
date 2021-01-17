@@ -1,14 +1,23 @@
 /* contacts-top */
 
 .contacts-top {
-  // display: flex;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 
   &__item:not(:last-child) {
     margin-right: 50px;
   }
 
   &__link {
-    // display: flex;
+    display: flex;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
