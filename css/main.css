@@ -178,6 +178,8 @@ img {
 @media screen and (min-width: 768px) {
   .contacts-top {
     display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
@@ -186,38 +188,111 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
-.contacts-top__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 768px) {
+  .contacts-top__item:not(:last-child) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-top__item:not(:last-child) {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-top__item:not(:last-child) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 50px;
+    margin-bottom: 0px;
+  }
 }
 
 .contacts-top__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: #757575;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .contacts-top__link {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-top__link {
+    display: block;
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-top__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contacts-top__link:hover, .contacts-top__link:focus {
   color: #2196f3;
 }
 
-.contacts-top__icon {
-  margin-right: 10px;
+.contacts-top__envelope {
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-top__envelope {
+    margin-right: 8px;
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-top__envelope {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.contacts-top__smartphone {
+  fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-top__smartphone {
+    margin-right: 8px;
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-top__smartphone {
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+  }
 }
 
 /* contacts-bottom */
@@ -395,30 +470,31 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.page-header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .page-header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
-.page-header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 768px) {
+  .page-header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 /* justify-content: space-between; */
 /* site-nav */
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   /* В главной навигации, при помощи псевдоэлемента,
  сделано подчёркивание текущей ссылки */
 }
@@ -426,6 +502,23 @@ img {
 @media screen and (max-width: 768px) {
   .site-nav {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
