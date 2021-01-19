@@ -4,22 +4,61 @@
   background-color: $background-team-color;
 
   &__title {
-    padding-top: 94px;
+    padding-top: 60px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+    }
   }
 
   &__items {
-    // display: flex;
-  }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__item {
+    background-color: $white-color;
+
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4p;
-    background-color: $white-color;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+
+      &__item:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: $tablet) {
+      width: calc((100% - 30px) / 2);
+      margin-right: 30px;
+      margin-bottom: 30px;
+
+      &__item:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      &__item:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 90px) / 4);
+      margin-bottom: 0px;
+
+      &__item:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
   }
 
   &__photo {
@@ -50,8 +89,18 @@
   }
 
   &__socials-container {
-    // display: flex;
+    display: flex;
     justify-content: center;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 480px) {
+      width: 206px;
+      margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      margin-bottom: 24px;
+    }
   }
 }

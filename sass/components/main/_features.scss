@@ -1,43 +1,117 @@
 /* features*/
 
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 
   &__items {
-    display: flex;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__item {
-    width: 270px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 480px) {
+    &__item:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__item:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 
   &__thumb {
     margin-top: 0px;
     margin-bottom: 30px;
+
     height: 120px;
-    width: 270px;
+    width: 450px;
     border-radius: 4px;
     background-color: $background-team-color;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__icon {
-    margin: 25px 100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 
+  @media screen and (max-width: 768px) {
+    &__icon {
+      margin-left: 190px;
+      margin-right: 190px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__icon {
+      margin-left: 142px;
+      margin-right: 142px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__item {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+  }
+
+  // margin: 25px 100px;
   &__title {
     margin-top: 0px;
     margin-bottom: 10px;
 
-    color: $text-title-color;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: $text-title-color;
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   &__text {

@@ -20,6 +20,11 @@
 
   text-align: center;
 
+  @media screen and (max-width: 1200px) {
+    padding-top: 118px;
+    height: 400px;
+  }
+
   &__title {
     margin-top: 0px;
     margin-bottom: 30px;
@@ -33,5 +38,10 @@
 
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.62;
+    }
   }
 }
