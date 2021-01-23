@@ -10,13 +10,24 @@
   box-shadow: 0px 4px 4px $hero-box-shadow-color;
 
   &__container {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: baseline;
+    }
   }
 
   &__info {
-    margin: 0px;
-    width: 230px;
-    /* outline: 1px solid red; */
+    @media screen and (max-width: 1199px) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 230px;
+      // margin-right: 70px;
+    }
+
+    outline: 1px solid red;
   }
 }

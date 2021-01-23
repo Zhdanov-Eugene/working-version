@@ -42,21 +42,24 @@
 /* button-subscription */
 
 .subscription__button-subscription {
-  display: flex;
-  align-items: center;
-
   padding-right: 28px;
   padding-left: 29px;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .button-subscription__icon {
   fill: currentColor;
   margin-left: 10px;
 }
-.button-subscription {
-  padding-right: 28px;
-  padding-left: 29px;
-}
+// .button-subscription {
+//   padding-right: 28px;
+//   padding-left: 29px;
+// }
 
 .button:hover,
 .button:focus,
