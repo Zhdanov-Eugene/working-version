@@ -41,6 +41,24 @@
               <a class="site-nav__link" href="">Контакты</a>
             </li>
           </ul>
+
+          <!-- menu-button -->
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="falce"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="Мобильное меню">
+              <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+              <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+            </svg>
+          </button>
+
+          <div class="menu-container" id="menu-container" data-menu>
+            content
+          </div>
         </nav>
         <!-- contacts-top -->
         <ul class="contacts-top list">
@@ -59,14 +77,6 @@
             >
           </li>
         </ul>
-        <!-- <div>
-          <button class="button-menu">
-            <svg width="40" height="40" aria-label="Мобильное меню">
-              <use></use>
-              <use></use>
-            </svg>
-          </button>
-        </div> -->
       </div>
     </header>
 
@@ -645,6 +655,8 @@
         </form>
       </div>
     </div>
+
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
     <!-- <script src="./js/form.js"></script> -->
   </body>

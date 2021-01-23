@@ -1,18 +1,23 @@
 /* subscription */
 .subscription {
+  width: 100%;
   @media screen and (min-width: 480px) {
-    width: 100%;
     text-align: center;
     margin-bottom: 60px;
   }
-  // @media screen and (min-width: 768px) {
-  //   width: 100%;
-  //   text-align: center;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //    width: 570px;
-  // margin-left: 93px;
-  // }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin: 0px;
+    transform: translateX((100% - 40%) /2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+    margin-bottom: 0px;
+    text-align: left;
+    transform: translateX(0%);
+  }
 
   outline: 1px solid red;
 
@@ -27,18 +32,28 @@
     text-transform: uppercase;
 
     color: $white-color;
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
   }
 
   &__form {
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
       width: 100%;
       text-align: center;
       // margin-bottom: 20px;
     }
 
-    // @media screen and (min-width: 768px) {
-    //   display: flex;
-    // }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__input {
@@ -58,7 +73,7 @@
     background-color: transparent;
     transition: $transition-time $time-distribution-function;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 1200px) {
       width: 100%;
       margin-bottom: 20px;
     }
