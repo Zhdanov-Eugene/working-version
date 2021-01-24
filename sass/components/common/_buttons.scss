@@ -38,6 +38,10 @@
   padding-right: 55px;
   padding-left: 56px;
   transform: translateX(50%);
+
+  @media screen and (max-width: 479px) {
+    transform: translateX(calc(100% / 4));
+  }
 }
 /* button-subscription */
 
@@ -106,28 +110,6 @@
 .button-close:focus {
   fill: $accent-blue-color;
   cursor: pointer;
-}
-
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-.menu-button .icon-menu {
-  display: block;
-}
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button.is-open .icon-cross {
-  display: block;
 }
 
 //   @media screen and (min-width: 768px) {

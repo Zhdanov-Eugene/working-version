@@ -3,6 +3,10 @@ body {
   color: $text-gray-color;
   font-family: 'Roboto', sans-serif;
   margin: 0;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 a {
   text-decoration: none;
