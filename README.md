@@ -1,5 +1,8 @@
-# working-version
-
-@media screen and (min-width: 480px) { padding-bottom: 60px; } @media screen and
-(min-width: 768px) { padding-bottom: 60px; } @media screen and (min-width:
-1200px) { padding-bottom: 94px; }
+<!-- {
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+} -->
+<!-- http://www.rhd.ru/docs/manuals/enterprise/RHEL-AS-2.1-Manual/getting-started-guide/s1-navigating-cd.html -->
